@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #C5C6C7;
+  font-family: 'Varela Round', sans-serif;
+  min-width: 350px;
+}
+
+#root {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  border-right: 5px solid #FFF;
+  border-left: 5px solid #FFF;
+  background: #1F2833;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.repos-header {
+  width: 100%;
+  height: 250px;
+  font-size: 32px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3AAFA9;
+  color: #FFF;
+  border-bottom: 5px solid #fff;
+  padding: 0 30px;
+}
+
+.repos-list {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+h1 {
+  width: max-content;
+  height: max-content;
+  font-size: 4vw;
+}
+
+h3 {
+  margin: 10px 0;
+  color: #FFF;
+}
+
+.repo-container, .contributors-container {
+  width: 50%;
+}
+
+.repo-container ul, .contributors-container li{
+  width: 90%;
+  list-style: none;
+  background: #3AAFA9;
+  margin: 20px 0;
+  padding: 30px;
+  border: 5px solid #FFF;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.contributors-container ul {
+  color: #FFF;
+  margin-right: 10px; 
+}
+
+.repo-container ul {
+  margin: 52px 0 0 10px;
+
+}
+
+.contributors-container li {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.contributors-container img, .contributors-container a, .contributors-container span {
+  display: block;
+}
+
+.contributors-container img {
+  width: 75px;
+}
+
+.contributors-container a {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.alert-error {
+  height: 100px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3vw;
+  color: red;
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+
+  h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 3vw;
+  }
+
+  .repos-list {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .repo-container, .contributors-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 649px) {
+  h1 {
+    width: max-content;
+    height: max-content;
+    font-size: 3vw;
+  }
+
+  .repo-container, .contributors-container {
+    width: 80%;
+  }
+
+  .repos-list {
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+  }
+}
