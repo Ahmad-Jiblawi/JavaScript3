@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body,html {
+  background: #C5C6C7;
+  min-width: 350px;
+}
+
+#root {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  border-right: 5px solid #FFF;
+  border-left: 5px solid #FFF;
+  background: #1F2833;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+  font-size: 32px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #3AAFA9;
+  color: #FFF;
+  border-bottom: 5px solid #fff;
+  padding: 0 30px;
+}
+
+.repo-select {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header div {
+  width: max-content;
+  height: max-content;
+  font-size: 4vw;
+}
+
+.main-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.repo-container, .contributors-container {
+  width: 50%;
+}
+
+.repo-container ul, .contributer-list{
+  width: 90%;
+  height: max-content;
+  list-style: none;
+  background: #3AAFA9;
+  margin: 20px auto;
+  padding: 30px;
+  border: 5px solid #FFF;
+  border-radius: 5px;
+  font-size: 20px;
+
+}
+
+.contributer-list {
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  
+}
+
+.contributer-list p {
+  margin-left: 10px;
+}
+
+
+.info-list li {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+
+.contributer-list img {
+  width: 65px;
+}
+
+
+.alert-error {
+  width: max-content;
+  height: max-content;
+  margin: 30px 0 0 30px;
+  font-weight: bold;
+  font-size: 3vw;
+  color: red;
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+
+  .repo-container, .contributors-container {
+    width: 100%;
+  }
+
+  .repo-select {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .header div {
+    font-size: 3vw;
+  }
+
+  .info-list li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 649px) {
+
+  .header{
+    height: 125px;
+
+  }
+
+  .header div {
+    margin: auto;
+    width: max-content;
+  }
+
+  .repo-select {
+    margin: 0 auto 20px;
+    width: 80%;
+  }
+
+  .repo-container, .contributors-container {
+    width: 100%;
+  }
+
+  .info-list li {
+    font-size: 1rem;
+  }
+
+  .contributer-list p {
+    font-size: 0.8rem;
+  }
+
+}
